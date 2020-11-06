@@ -1,0 +1,14 @@
+{
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx"],
+      "options": {
+        "printWidth": 130,
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "arrowParens": "always",
+        "trailingComma": "all"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "react-redux-study-app",
+  "version": "1.0.0",
+  "main": ".",
+  "private": true,
+  "scripts": {
+    "install-front": "cd ./client && npm i",
+    "remove-front-build": "cd ./client && node_modules/.bin/rimraf ./build",
+    "build:front": "cd ./client && npm run prod",
+    "build:server": "cd ./server && npm i",
+    "start-server": "npm run prod",
+    "start": "npm i; node --optimize_for_size --max_old_space_size=460 --gc_interval=100",
+    "postinstall": "run-s -cln install-front remove-front-build build:front build:server",
+    "heroku-postbuild": "npm run start-server"
+  },
+  "engines": {
+    "node": "10.15.x",
+    "npm": "6.13.x"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}

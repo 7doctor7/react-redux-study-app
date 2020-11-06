@@ -1,0 +1,63 @@
+{
+  "extends": ["airbnb-base", "prettier"],
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParameters": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "restParams": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true
+  },
+  "rules": {
+    "no-console": ["warn", { "allow": ["error"] }],
+    "no-return-await": 0,
+    "max-len": ["error", 130],
+    "implicit-arrow-linebreak": "off",
+    "object-curly-newline": [
+      "warn",
+      {
+        "multiline": true,
+        "consistent": true
+      }
+    ],
+    "comma-dangle": [2, "always-multiline"],
+    "import/no-cycle": 0,
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "eol-last": ["error", "always"],
+    "indent": ["error", 2, { "MemberExpression": 1 }],
+    "no-multiple-empty-lines": ["error"],
+    "no-new-symbol": "error",
+    "no-trailing-spaces": ["error"],
+    "no-undef": ["error"],
+    "no-unused-vars": ["error"],
+    "object-curly-spacing": ["error", "always"],
+    "object-shorthand": "error",
+    "prefer-const": 2,
+    "quotes": ["error", "single"],
+    "space-in-parens": ["error", "never"],
+    "strict": [2, "never"]
+  }
+}
